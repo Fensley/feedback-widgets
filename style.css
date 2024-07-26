@@ -1,1 +1,122 @@
- 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: monospace;
+}
+section {
+  display: flex;
+  gap: 40px;
+}
+.card-one {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 40px 20px 20px 20px;
+  width: 400px;
+  height: fit-content;
+  border-radius: 5px;
+}
+.card-two {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 40px 20px 20px 20px;
+  height: fit-content;
+  border-radius: 5px;
+}
+.fa-x {
+  float: right;
+  display: flex;
+  cursor: pointer;
+  margin-top: -20px;
+  color: gray;
+  &:hover {
+    color: blue;
+  }
+}
+.how {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  max-width: 340px;
+}
+.number {
+  display: flex;
+  gap: 5px;
+  margin: 20px 0 10px 0;
+}
+.number p {
+  border: 1px solid rgb(212, 212, 212);
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgb(95, 108, 124);
+    color: white;
+  }
+}
+button:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+.notlikely,
+.skip-ctn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skip-ctn {
+  margin-top: 25px;
+}
+button {
+  padding: 10px 25px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.foremoji {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  margin: 20px 0;
+}
+.tell {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 9px 15px 40px 10px;
+  outline: none;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+}
+.em {
+  transition: all 0.3s;
+  padding: 10px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 841px) {
+  section {
+    flex-direction: column;
+  }
+}
